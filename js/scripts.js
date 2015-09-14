@@ -6,12 +6,15 @@ $(function() {
 
     var newTask = { task: inputtedTask, newDescription: description };
 
-    $("ul#each-task").append("<li><span class='task'>" + newTask.task + ": " + newTask.newDescription + "</span></li>");
+    $("ul#each-task").append("<li><div class='checkbox'><input type='checkbox'></div><span class='task'>" + newTask.task + ": " + newTask.newDescription + "</span></li>");
     $(".task").last().click(function() {
       $("#each-task").show();
     });
   $("input#new-task").val("");
   $("input#new-description").val("");
-  });
 
+    $("li").click(function() {
+      $(this).remove();
+    });
+  });
 });
