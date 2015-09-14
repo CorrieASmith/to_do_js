@@ -1,3 +1,14 @@
 ul li {
   list-style: none;
 }
+
+#completed {
+  list-style: none;
+  float: right;
+}
+
+.results {
+  list-style: none;
+  float: left;
+
+}

@@ -14,7 +14,8 @@ $(function() {
   $("input#new-description").val("");
 
     $("li").click(function() {
-      $(this).remove();
+      $(this).appendTo("#completed");
+      $(".checkbox").hide();
     });
   });
 });
