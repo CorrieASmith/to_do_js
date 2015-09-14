@@ -2,9 +2,9 @@
 <html>
   <head>
     <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="../to_do/js/scripts.js"></script>
     <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../to_do/css/styles.css" media="screen" title="no title" charset="utf-8">
     <title>WELCOME TO TO DO LIST V2.0</title>
   </head>
   <body>
@@ -19,8 +19,15 @@
             <input type="text" id='new-description' class="form-control" placeholder='Task Description'>
           </div>
           </div>
-          <button id-'submit' class="btn btn-warning">Add Task</button>
+          <button id='submit' class="btn btn-warning">Add Task</button>
         </form>
+
+        <div class='results'>
+          <h2>Tasks:</h2>
+          <ul id="each-task">
+
+          </ul>
+        </div>
       </div>
     </div>
   </body>
