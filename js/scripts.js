@@ -15,7 +15,9 @@ $(function() {
 
     $("li").click(function() {
       $(this).appendTo("#completed");
-      $(".checkbox").hide();
+      $(".checkbox").hide(this);
+      $(".checkbox").show(this);
+      event.preventDefault();
     });
   });
 });
